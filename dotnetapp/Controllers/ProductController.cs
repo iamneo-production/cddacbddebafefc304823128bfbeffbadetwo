@@ -23,17 +23,18 @@ namespace dotnetapp.Controllers
 
     public IQueryable<Product> GetAll()
     {
-        return null;
+        return GetProductList();
     }
 
     public bool AddProduct(Product newProduct)
     {         
-       return false;            
+       return Add(newProduct);            
     }   
 
     public bool DeleteProduct (int id)
     {
-   return false; 
+
+       return DeleteProduct(id); 
     }
     }
 }
